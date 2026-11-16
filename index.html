@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Convoy of Bulls</title>
+  <meta name="description" content="Convoy of Bulls — indie game studio.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <meta property="og:title" content="Convoy of Bulls">
+  <meta property="og:description" content="Indie game studio">
+  <meta property="og:image" content="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #8a0000;
+      --red-dark: #5c0000;
+      --gold: #f0a030;
+      --cream: #f4f0e6;
+      --ink: #0e0e0e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { min-height: 100%; }
+    body {
+      background: var(--red);
+      background-image: radial-gradient(ellipse at center, var(--red) 0%, var(--red-dark) 100%);
+      background-attachment: fixed;
+      color: var(--cream);
+      font-family: "VT323", monospace;
+      font-size: 22px;
+      line-height: 1.3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 16px 32px;
+      min-height: 100vh;
+    }
+    main { width: 100%; max-width: 560px; text-align: center; flex: 1; }
+    .logo {
+      width: 240px; max-width: 70vw; height: auto;
+      image-rendering: pixelated;
+      border: 4px solid var(--ink);
+      box-shadow: 8px 8px 0 var(--ink);
+    }
+    h1 {
+      font-family: "Press Start 2P", monospace;
+      font-size: clamp(20px, 6vw, 32px);
+      margin-top: 36px;
+      text-shadow: 4px 4px 0 var(--ink);
+      letter-spacing: 1px;
+    }
+    .tagline {
+      color: var(--gold);
+      font-size: 26px;
+      margin-top: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    h2 {
+      font-family: "Press Start 2P", monospace;
+      font-size: 14px;
+      color: var(--gold);
+      margin: 48px 0 16px;
+      text-shadow: 2px 2px 0 var(--ink);
+    }
+    .game {
+      display: block;
+      background: var(--ink);
+      color: var(--cream);
+      text-decoration: none;
+      border: 4px solid var(--ink);
+      box-shadow: 6px 6px 0 rgba(0,0,0,.45);
+      transition: transform .1s, box-shadow .1s;
+    }
+    .game img { display: block; width: 100%; height: auto; }
+    .game span {
+      display: block;
+      padding: 12px 14px;
+      font-size: 26px;
+    }
+    .game span small { display: block; color: var(--gold); font-size: 20px; }
+    .game:hover, .game:focus-visible { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 rgba(0,0,0,.45); }
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .socials a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      background: var(--cream);
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 24px;
+      border: 3px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--ink);
+      transition: transform .1s, box-shadow .1s, background .1s;
+    }
+    .socials a:hover, .socials a:focus-visible {
+      background: var(--gold);
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 var(--ink);
+    }
+    .socials svg { width: 22px; height: 22px; fill: currentColor; }
+    footer { margin-top: 56px; font-size: 18px; opacity: .7; }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="logo.png" alt="Convoy of Bulls logo" width="240" height="240">
+    <h1>Convoy of Bulls</h1>
+    <p class="tagline">Indie Game Studio</p>
+
+    <h2>Games</h2>
+    <a class="game" href="https://store.steampowered.com/app/5356450/That_Mountain_Needs_to_Fall/" target="_blank" rel="noopener">
+      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/5356450/header.jpg" alt="" onerror="this.remove()">
+      <span>That Mountain Needs to Fall<small>Wishlist on Steam &rarr;</small></span>
+    </a>
+
+    <h2>Follow us</h2>
+    <nav class="socials">
+      <a href="https://www.tiktok.com/@convoyofbulls" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.7a4.8 4.8 0 0 1-3.8-4.2V2h-3.4v13.7a2.9 2.9 0 1 1-2-2.7V9.5a6.3 6.3 0 1 0 5.4 6.2V8.8a8.2 8.2 0 0 0 3.8 1.2V6.7Z"/></svg>
+        TikTok
+      </a>
+      <a href="https://www.instagram.com/convoyofbulls/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 2c-2.7 0-3 0-4.1.1C4.3 2.2 2.2 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.6 2.2 5.7 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.1 5.7-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.6-2.2-5.7-5.8-5.8C15 2 14.7 2 12 2Zm0 1.8c2.7 0 3 0 4 .1 2.6.1 3.9 1.4 4 4 .1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.6-1.4 3.9-4 4-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.6-.1-3.9-1.4-4-4-.1-1-.1-1.3-.1-4s0-3 .1-4c.1-2.6 1.4-3.9 4-4 1-.1 1.3-.1 4-.1Z"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.youtube.com/channel/UCP5yRCdvvoMPHIkCbyLgCoA" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg>
+        YouTube
+      </a>
+    </nav>
+  </main>
+  <footer>&copy; <span id="y">2026</span> Convoy of Bulls</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
