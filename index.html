@@ -79,8 +79,29 @@
       padding: 12px 14px;
       font-size: 26px;
     }
-    .game span small { display: block; color: var(--gold); font-size: 20px; }
-    .game:hover, .game:focus-visible { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 rgba(0,0,0,.45); }
+    .stores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 0 14px 14px;
+    }
+    .stores a {
+      flex: 1 1 200px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: var(--gold);
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 22px;
+      border: 3px solid var(--cream);
+      transition: transform .1s, background .1s;
+    }
+    .stores a:hover, .stores a:focus-visible { background: var(--cream); transform: translate(-2px, -2px); }
+    .stores svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
     .socials {
       display: flex;
       justify-content: center;
@@ -116,10 +137,20 @@
     <p class="tagline">Indie Game Studio</p>
 
     <h2>Games</h2>
-    <a class="game" href="https://store.steampowered.com/app/5356450/That_Mountain_Needs_to_Fall/" target="_blank" rel="noopener">
+    <div class="game">
       <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/5356450/header.jpg" alt="" onerror="this.remove()">
-      <span>That Mountain Needs to Fall<small>Wishlist on Steam &rarr;</small></span>
-    </a>
+      <span>That Mountain Needs to Fall</span>
+      <div class="stores">
+        <a href="https://play.google.com/store/apps/details?id=com.antonioigorcarvalho.thatmountainneedstofall" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8 13.8 12 3.6 22.2a1.6 1.6 0 0 1-.6-1.3V3.1c0-.5.2-1 .6-1.3Zm11.3 11.3 2.4 2.4-11.2 6.4 8.8-8.8Zm3.6-4.3 3 1.7c.9.5.9 1.8 0 2.3l-3 1.7-2.6-2.5 2.6-2.5ZM6.1 2.1l11.2 6.4-2.4 2.4-8.8-8.8Z"/></svg>
+          Get it on Google Play
+        </a>
+        <a href="https://store.steampowered.com/app/5356450/That_Mountain_Needs_to_Fall/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 0 0-12 11l6.4 2.7a3.4 3.4 0 0 1 2-.6l2.9-4.1v-.1a4.5 4.5 0 1 1 4.5 4.5h-.1l-4.1 3v.2a3.4 3.4 0 0 1-6.7.7L.4 15.5A12 12 0 1 0 12 0ZM7.5 18.2l-1.5-.6a2.5 2.5 0 1 0 1.4-3.4l1.5.6a1.9 1.9 0 1 1-1.4 3.4Zm11.3-9.4a3 3 0 1 0-3 3 3 3 0 0 0 3-3Zm-5.2 0a2.3 2.3 0 1 1 2.3 2.2 2.3 2.3 0 0 1-2.3-2.2Z"/></svg>
+          Wishlist on Steam
+        </a>
+      </div>
+    </div>
 
     <h2>Follow us</h2>
     <nav class="socials">
